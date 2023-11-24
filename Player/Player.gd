@@ -30,4 +30,6 @@ func _physics_process(delta):
 
 	current_speed = velocity.length()
 
+	$AnimationTree.set("parameters/Idle_Walk/blend_amount", current_speed/SPEED) 
+
 	move_and_slide()
